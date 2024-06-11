@@ -28,6 +28,12 @@ class Ui_Widget(object):
         self.tabWidget = QTabWidget(Widget)
         self.tabWidget.setObjectName(u"tabWidget")
         self.tabWidget.setGeometry(QRect(0, 0, 811, 601))
+        self.tabWidget.setContextMenuPolicy(Qt.DefaultContextMenu)
+        self.tabWidget.setStyleSheet(u"background-image: url(\".\\background.png\");\n"
+"background-repeat: no-repeat;  \n"
+"background-position: center;\n"
+"background-attachment: fixed;\n"
+"background-size: cover;")
         self.tab_3 = QWidget()
         self.tab_3.setObjectName(u"tab_3")
         self.label_9 = QLabel(self.tab_3)
@@ -57,120 +63,120 @@ class Ui_Widget(object):
         self.pushButton_2 = QPushButton(self.tab_3)
         self.pushButton_2.setObjectName(u"pushButton_2")
         self.pushButton_2.setGeometry(QRect(340, 460, 92, 28))
-        self.widget = QWidget(self.tab_3)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(10, 80, 431, 331))
-        self.gridLayout_2 = QGridLayout(self.widget)
+        self.layoutWidget = QWidget(self.tab_3)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(10, 80, 431, 331))
+        self.gridLayout_2 = QGridLayout(self.layoutWidget)
         self.gridLayout_2.setObjectName(u"gridLayout_2")
         self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.lineEdit_9 = QLineEdit(self.widget)
+        self.lineEdit_9 = QLineEdit(self.layoutWidget)
         self.lineEdit_9.setObjectName(u"lineEdit_9")
 
         self.gridLayout_2.addWidget(self.lineEdit_9, 4, 3, 1, 1)
 
-        self.label_4 = QLabel(self.widget)
+        self.label_4 = QLabel(self.layoutWidget)
         self.label_4.setObjectName(u"label_4")
 
         self.gridLayout_2.addWidget(self.label_4, 1, 2, 1, 1)
 
-        self.label_7 = QLabel(self.widget)
+        self.label_7 = QLabel(self.layoutWidget)
         self.label_7.setObjectName(u"label_7")
 
         self.gridLayout_2.addWidget(self.label_7, 5, 2, 1, 1)
 
-        self.lineEdit_5 = QLineEdit(self.widget)
+        self.lineEdit_5 = QLineEdit(self.layoutWidget)
         self.lineEdit_5.setObjectName(u"lineEdit_5")
 
         self.gridLayout_2.addWidget(self.lineEdit_5, 1, 1, 1, 1)
 
-        self.label_2 = QLabel(self.widget)
+        self.label_2 = QLabel(self.layoutWidget)
         self.label_2.setObjectName(u"label_2")
 
         self.gridLayout_2.addWidget(self.label_2, 1, 0, 1, 1)
 
-        self.label_8 = QLabel(self.widget)
+        self.label_8 = QLabel(self.layoutWidget)
         self.label_8.setObjectName(u"label_8")
 
         self.gridLayout_2.addWidget(self.label_8, 6, 2, 1, 1)
 
-        self.label_3 = QLabel(self.widget)
+        self.label_3 = QLabel(self.layoutWidget)
         self.label_3.setObjectName(u"label_3")
 
         self.gridLayout_2.addWidget(self.label_3, 0, 2, 1, 1)
 
-        self.label_5 = QLabel(self.widget)
+        self.label_5 = QLabel(self.layoutWidget)
         self.label_5.setObjectName(u"label_5")
 
         self.gridLayout_2.addWidget(self.label_5, 3, 2, 1, 1)
 
-        self.lineEdit_4 = QLineEdit(self.widget)
+        self.lineEdit_4 = QLineEdit(self.layoutWidget)
         self.lineEdit_4.setObjectName(u"lineEdit_4")
 
         self.gridLayout_2.addWidget(self.lineEdit_4, 0, 1, 1, 1)
 
-        self.label_6 = QLabel(self.widget)
+        self.label_6 = QLabel(self.layoutWidget)
         self.label_6.setObjectName(u"label_6")
 
         self.gridLayout_2.addWidget(self.label_6, 4, 2, 1, 1)
 
-        self.lineEdit_6 = QLineEdit(self.widget)
+        self.lineEdit_6 = QLineEdit(self.layoutWidget)
         self.lineEdit_6.setObjectName(u"lineEdit_6")
 
         self.gridLayout_2.addWidget(self.lineEdit_6, 0, 3, 1, 1)
 
-        self.lineEdit_11 = QLineEdit(self.widget)
+        self.lineEdit_11 = QLineEdit(self.layoutWidget)
         self.lineEdit_11.setObjectName(u"lineEdit_11")
 
         self.gridLayout_2.addWidget(self.lineEdit_11, 6, 3, 1, 1)
 
-        self.lineEdit_10 = QLineEdit(self.widget)
+        self.lineEdit_10 = QLineEdit(self.layoutWidget)
         self.lineEdit_10.setObjectName(u"lineEdit_10")
 
         self.gridLayout_2.addWidget(self.lineEdit_10, 5, 3, 1, 1)
 
-        self.lineEdit_8 = QLineEdit(self.widget)
+        self.lineEdit_8 = QLineEdit(self.layoutWidget)
         self.lineEdit_8.setObjectName(u"lineEdit_8")
 
         self.gridLayout_2.addWidget(self.lineEdit_8, 3, 3, 1, 1)
 
-        self.lineEdit_7 = QLineEdit(self.widget)
+        self.lineEdit_7 = QLineEdit(self.layoutWidget)
         self.lineEdit_7.setObjectName(u"lineEdit_7")
 
         self.gridLayout_2.addWidget(self.lineEdit_7, 1, 3, 1, 1)
 
-        self.label = QLabel(self.widget)
+        self.label = QLabel(self.layoutWidget)
         self.label.setObjectName(u"label")
 
         self.gridLayout_2.addWidget(self.label, 0, 0, 1, 1)
 
-        self.widget1 = QWidget(self.tab_3)
-        self.widget1.setObjectName(u"widget1")
-        self.widget1.setGeometry(QRect(480, 100, 258, 220))
-        self.verticalLayout_7 = QVBoxLayout(self.widget1)
+        self.layoutWidget1 = QWidget(self.tab_3)
+        self.layoutWidget1.setObjectName(u"layoutWidget1")
+        self.layoutWidget1.setGeometry(QRect(480, 100, 258, 220))
+        self.verticalLayout_7 = QVBoxLayout(self.layoutWidget1)
         self.verticalLayout_7.setObjectName(u"verticalLayout_7")
         self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
-        self.label_64 = QLabel(self.widget1)
+        self.label_64 = QLabel(self.layoutWidget1)
         self.label_64.setObjectName(u"label_64")
 
         self.verticalLayout_7.addWidget(self.label_64)
 
-        self.textBrowser = QTextBrowser(self.widget1)
+        self.textBrowser = QTextBrowser(self.layoutWidget1)
         self.textBrowser.setObjectName(u"textBrowser")
 
         self.verticalLayout_7.addWidget(self.textBrowser)
 
-        self.widget2 = QWidget(self.tab_3)
-        self.widget2.setObjectName(u"widget2")
-        self.widget2.setGeometry(QRect(480, 340, 258, 220))
-        self.verticalLayout_8 = QVBoxLayout(self.widget2)
+        self.layoutWidget2 = QWidget(self.tab_3)
+        self.layoutWidget2.setObjectName(u"layoutWidget2")
+        self.layoutWidget2.setGeometry(QRect(480, 340, 258, 220))
+        self.verticalLayout_8 = QVBoxLayout(self.layoutWidget2)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
         self.verticalLayout_8.setContentsMargins(0, 0, 0, 0)
-        self.label_65 = QLabel(self.widget2)
+        self.label_65 = QLabel(self.layoutWidget2)
         self.label_65.setObjectName(u"label_65")
 
         self.verticalLayout_8.addWidget(self.label_65)
 
-        self.textBrowser_13 = QTextBrowser(self.widget2)
+        self.textBrowser_13 = QTextBrowser(self.layoutWidget2)
         self.textBrowser_13.setObjectName(u"textBrowser_13")
 
         self.verticalLayout_8.addWidget(self.textBrowser_13)
@@ -181,18 +187,18 @@ class Ui_Widget(object):
         self.pushButton_4 = QPushButton(self.tab)
         self.pushButton_4.setObjectName(u"pushButton_4")
         self.pushButton_4.setGeometry(QRect(90, 340, 111, 31))
-        self.widget3 = QWidget(self.tab)
-        self.widget3.setObjectName(u"widget3")
-        self.widget3.setGeometry(QRect(20, 60, 258, 220))
-        self.verticalLayout_3 = QVBoxLayout(self.widget3)
+        self.layoutWidget3 = QWidget(self.tab)
+        self.layoutWidget3.setObjectName(u"layoutWidget3")
+        self.layoutWidget3.setGeometry(QRect(20, 60, 258, 220))
+        self.verticalLayout_3 = QVBoxLayout(self.layoutWidget3)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.label_12 = QLabel(self.widget3)
+        self.label_12 = QLabel(self.layoutWidget3)
         self.label_12.setObjectName(u"label_12")
 
         self.verticalLayout_3.addWidget(self.label_12)
 
-        self.textBrowser_3 = QTextBrowser(self.widget3)
+        self.textBrowser_3 = QTextBrowser(self.layoutWidget3)
         self.textBrowser_3.setObjectName(u"textBrowser_3")
 
         self.verticalLayout_3.addWidget(self.textBrowser_3)
@@ -203,58 +209,58 @@ class Ui_Widget(object):
         self.pushButton_13 = QPushButton(self.tab_2)
         self.pushButton_13.setObjectName(u"pushButton_13")
         self.pushButton_13.setGeometry(QRect(110, 490, 92, 28))
-        self.widget4 = QWidget(self.tab_2)
-        self.widget4.setObjectName(u"widget4")
-        self.widget4.setGeometry(QRect(40, 60, 241, 411))
-        self.gridLayout = QGridLayout(self.widget4)
+        self.layoutWidget4 = QWidget(self.tab_2)
+        self.layoutWidget4.setObjectName(u"layoutWidget4")
+        self.layoutWidget4.setGeometry(QRect(40, 60, 241, 411))
+        self.gridLayout = QGridLayout(self.layoutWidget4)
         self.gridLayout.setObjectName(u"gridLayout")
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
-        self.lineEdit_3 = QLineEdit(self.widget4)
+        self.lineEdit_3 = QLineEdit(self.layoutWidget4)
         self.lineEdit_3.setObjectName(u"lineEdit_3")
 
         self.gridLayout.addWidget(self.lineEdit_3, 0, 1, 1, 1)
 
-        self.lineEdit_12 = QLineEdit(self.widget4)
+        self.lineEdit_12 = QLineEdit(self.layoutWidget4)
         self.lineEdit_12.setObjectName(u"lineEdit_12")
 
         self.gridLayout.addWidget(self.lineEdit_12, 6, 1, 1, 1)
 
-        self.lineEdit_13 = QLineEdit(self.widget4)
+        self.lineEdit_13 = QLineEdit(self.layoutWidget4)
         self.lineEdit_13.setObjectName(u"lineEdit_13")
 
         self.gridLayout.addWidget(self.lineEdit_13, 7, 1, 1, 1)
 
-        self.checkBox_2 = QCheckBox(self.widget4)
+        self.checkBox_2 = QCheckBox(self.layoutWidget4)
         self.checkBox_2.setObjectName(u"checkBox_2")
         self.checkBox_2.setChecked(True)
 
         self.gridLayout.addWidget(self.checkBox_2, 9, 0, 1, 2)
 
-        self.checkBox = QCheckBox(self.widget4)
+        self.checkBox = QCheckBox(self.layoutWidget4)
         self.checkBox.setObjectName(u"checkBox")
         self.checkBox.setEnabled(True)
         self.checkBox.setChecked(True)
 
         self.gridLayout.addWidget(self.checkBox, 3, 0, 1, 2)
 
-        self.label_17 = QLabel(self.widget4)
+        self.label_17 = QLabel(self.layoutWidget4)
         self.label_17.setObjectName(u"label_17")
 
         self.gridLayout.addWidget(self.label_17, 6, 0, 1, 1)
 
-        self.lineEdit = QLineEdit(self.widget4)
+        self.lineEdit = QLineEdit(self.layoutWidget4)
         self.lineEdit.setObjectName(u"lineEdit")
         self.lineEdit.setEnabled(True)
         self.lineEdit.setInputMethodHints(Qt.ImhNone)
 
         self.gridLayout.addWidget(self.lineEdit, 4, 1, 1, 1)
 
-        self.label_13 = QLabel(self.widget4)
+        self.label_13 = QLabel(self.layoutWidget4)
         self.label_13.setObjectName(u"label_13")
 
         self.gridLayout.addWidget(self.label_13, 0, 0, 1, 1)
 
-        self.lineEdit_14 = QLineEdit(self.widget4)
+        self.lineEdit_14 = QLineEdit(self.layoutWidget4)
         self.lineEdit_14.setObjectName(u"lineEdit_14")
         font = QFont()
         font.setBold(False)
@@ -266,41 +272,41 @@ class Ui_Widget(object):
 
         self.gridLayout.addWidget(self.lineEdit_14, 10, 1, 1, 1)
 
-        self.label_19 = QLabel(self.widget4)
+        self.label_19 = QLabel(self.layoutWidget4)
         self.label_19.setObjectName(u"label_19")
         self.label_19.setMaximumSize(QSize(16777210, 16777215))
         self.label_19.setInputMethodHints(Qt.ImhNone)
 
         self.gridLayout.addWidget(self.label_19, 10, 0, 1, 1)
 
-        self.label_14 = QLabel(self.widget4)
+        self.label_14 = QLabel(self.layoutWidget4)
         self.label_14.setObjectName(u"label_14")
 
         self.gridLayout.addWidget(self.label_14, 1, 0, 1, 1)
 
-        self.lineEdit_2 = QLineEdit(self.widget4)
+        self.lineEdit_2 = QLineEdit(self.layoutWidget4)
         self.lineEdit_2.setObjectName(u"lineEdit_2")
 
         self.gridLayout.addWidget(self.lineEdit_2, 1, 1, 1, 1)
 
-        self.label_18 = QLabel(self.widget4)
+        self.label_18 = QLabel(self.layoutWidget4)
         self.label_18.setObjectName(u"label_18")
 
         self.gridLayout.addWidget(self.label_18, 7, 0, 1, 1)
 
-        self.label_15 = QLabel(self.widget4)
+        self.label_15 = QLabel(self.layoutWidget4)
         self.label_15.setObjectName(u"label_15")
         self.label_15.setEnabled(True)
         self.label_15.setInputMethodHints(Qt.ImhNone)
 
         self.gridLayout.addWidget(self.label_15, 4, 0, 1, 1)
 
-        self.label_16 = QLabel(self.widget4)
+        self.label_16 = QLabel(self.layoutWidget4)
         self.label_16.setObjectName(u"label_16")
 
         self.gridLayout.addWidget(self.label_16, 2, 0, 1, 1)
 
-        self.comboBox = QComboBox(self.widget4)
+        self.comboBox = QComboBox(self.layoutWidget4)
         self.comboBox.addItem("")
         self.comboBox.addItem("")
         self.comboBox.addItem("")
@@ -308,34 +314,34 @@ class Ui_Widget(object):
 
         self.gridLayout.addWidget(self.comboBox, 2, 1, 1, 1)
 
-        self.widget5 = QWidget(self.tab_2)
-        self.widget5.setObjectName(u"widget5")
-        self.widget5.setGeometry(QRect(330, 300, 258, 220))
-        self.verticalLayout = QVBoxLayout(self.widget5)
+        self.layoutWidget5 = QWidget(self.tab_2)
+        self.layoutWidget5.setObjectName(u"layoutWidget5")
+        self.layoutWidget5.setGeometry(QRect(330, 300, 258, 220))
+        self.verticalLayout = QVBoxLayout(self.layoutWidget5)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.label_21 = QLabel(self.widget5)
+        self.label_21 = QLabel(self.layoutWidget5)
         self.label_21.setObjectName(u"label_21")
 
         self.verticalLayout.addWidget(self.label_21)
 
-        self.textBrowser_5 = QTextBrowser(self.widget5)
+        self.textBrowser_5 = QTextBrowser(self.layoutWidget5)
         self.textBrowser_5.setObjectName(u"textBrowser_5")
 
         self.verticalLayout.addWidget(self.textBrowser_5)
 
-        self.widget6 = QWidget(self.tab_2)
-        self.widget6.setObjectName(u"widget6")
-        self.widget6.setGeometry(QRect(330, 20, 258, 220))
-        self.verticalLayout_2 = QVBoxLayout(self.widget6)
+        self.layoutWidget6 = QWidget(self.tab_2)
+        self.layoutWidget6.setObjectName(u"layoutWidget6")
+        self.layoutWidget6.setGeometry(QRect(330, 20, 258, 220))
+        self.verticalLayout_2 = QVBoxLayout(self.layoutWidget6)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.label_20 = QLabel(self.widget6)
+        self.label_20 = QLabel(self.layoutWidget6)
         self.label_20.setObjectName(u"label_20")
 
         self.verticalLayout_2.addWidget(self.label_20)
 
-        self.textBrowser_4 = QTextBrowser(self.widget6)
+        self.textBrowser_4 = QTextBrowser(self.layoutWidget6)
         self.textBrowser_4.setObjectName(u"textBrowser_4")
 
         self.verticalLayout_2.addWidget(self.textBrowser_4)
@@ -349,7 +355,7 @@ class Ui_Widget(object):
         self.checkBox.toggled.connect(self.lineEdit.setVisible)
         self.pushButton.clicked["bool"].connect(self.spinBox.stepUp)
 
-        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(Widget)
